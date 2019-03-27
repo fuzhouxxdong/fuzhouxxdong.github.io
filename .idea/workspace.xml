@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38d6e008-c604-4285-ab4f-4aa3dd9657b3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/next/.github/CODE_OF_CONDUCT.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/next/.github/CONTRIBUTING.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/next/.github/ISSUE_TEMPLATE.md" beforeDir="false" />
@@ -89,7 +90,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-267" />
     <option name="y" value="117" />
     <option name="width" value="1944" />
@@ -107,6 +108,17 @@
             <path>
               <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
               <item name="myblog" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="next" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -152,15 +164,15 @@
       <updated>1553229857543</updated>
       <workItem from="1553229858779" duration="6683000" />
       <workItem from="1553494457663" duration="2009000" />
-      <workItem from="1553665041836" duration="543000" />
+      <workItem from="1553665041836" duration="794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9235000" />
+    <option name="totallyTimeSpent" value="9486000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="704" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2494043" />
@@ -339,6 +351,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/next/layout/index.swig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/next/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
