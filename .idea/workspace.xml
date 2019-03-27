@@ -2,54 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38d6e008-c604-4285-ab4f-4aa3dd9657b3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/.github/CODE_OF_CONDUCT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/.github/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/.github/ISSUE_TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/.github/ISSUE_TEMPLATE/bug-report.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/.github/ISSUE_TEMPLATE/custom-issue-template.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/.github/ISSUE_TEMPLATE/feature-request.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/.github/ISSUE_TEMPLATE/non-english.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/.github/PULL_REQUEST_TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/.github/stale.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/next/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/AGPL3.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/ALGOLIA-SEARCH.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/AUTHORS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/DATA-FILES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/INSTALLATION.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/LEANCLOUD-COUNTER-SECURITY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/MATH.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/UPDATE-FROM-5.1.X.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/ru/DATA-FILES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/ru/INSTALLATION.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/ru/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/ru/UPDATE-FROM-5.1.X.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/zh-CN/ALGOLIA-SEARCH.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/zh-CN/CODE_OF_CONDUCT.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/zh-CN/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/zh-CN/DATA-FILES.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/zh-CN/INSTALLATION.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/zh-CN/LEANCLOUD-COUNTER-SECURITY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/zh-CN/MATH.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/zh-CN/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/docs/zh-CN/UPDATE-FROM-5.1.X.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/languages/de.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/languages/fr.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/languages/id.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/languages/it.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/languages/ja.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/languages/ko.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/languages/nl.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/languages/pt-BR.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/languages/pt.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/languages/ru.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/languages/tr.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/languages/uk.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/languages/vi.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/languages/zh-HK.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/themes/next/languages/zh-TW.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -61,7 +16,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -75,7 +40,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/themes/next" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -87,6 +52,7 @@
         <option value="$PROJECT_DIR$/themes/crisp/_config.yml" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/themes/next/_config.yml" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
       </list>
     </option>
   </component>
@@ -109,17 +75,6 @@
               <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
               <item name="myblog" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myblog" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myblog" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="next" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -133,7 +88,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../hexo-theme-doc" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -164,18 +119,19 @@
       <updated>1553229857543</updated>
       <workItem from="1553229858779" duration="6683000" />
       <workItem from="1553494457663" duration="2009000" />
-      <workItem from="1553665041836" duration="794000" />
+      <workItem from="1553665041836" duration="1909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9486000" />
+    <option name="totallyTimeSpent" value="10601000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2494043" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.2494043" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.79562044" />
@@ -195,10 +151,10 @@
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.2494043" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.2494043" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.79744524" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.79562044" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32846716" />
       <window_info anchor="bottom" id="Get Gist" order="4" />
@@ -216,6 +172,12 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/themes/crisp" />
+      <path value="$PROJECT_DIR$/themes/next" />
+    </ignored-roots>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/source/_posts/faker.md" />
@@ -355,6 +317,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/next/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

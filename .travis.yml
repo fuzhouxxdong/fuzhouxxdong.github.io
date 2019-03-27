@@ -1,0 +1,28 @@
+language: node_js
+node_js: stable
+
+# S: Build Lifecycle
+install:
+  - npm install
+
+script:
+  - hexo g
+
+after_script:
+  - cd ./public
+  - git init
+  - git config user.name "fuzhouxxdong"
+  - git config user.email "fuzhouxxdong@gmail.com"
+  - git add .
+  - git commit -m "Update docs"
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+  - git push --force --quiet "https://dfz:${CD_TOKEN}@${CD_REF}" master:master
+# E: Build LifeCycle
+
+branches:
+  only:
+    - master
+env:
+  global:
+    - GH_REF: github.com/fuzhouxxdong/chovy.git
+    - CD_REF: git.dev.tencent.com/dfz/myblog.git
