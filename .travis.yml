@@ -25,5 +25,5 @@ branches:
     - master
 env:
   global:
-    - GH_REF: github.com/fuzhouxxdong/chovy.git
+    - GH_REF: github.com/fuzhouxxdong/fuzhouxxdong.github.io.git
     - CD_REF: git.dev.tencent.com/dfz/myblog.git
