@@ -12,8 +12,8 @@ script:
 after_script:
   - cd ./public
   - git init
-  - git config user.name "fuzhouxxdong"
-  - git config user.email "fuzhouxxdong@gmail.com"
+  - git config user.name "${USER_NAME}"
+  - git config user.email "${EMAIL}"
   - git add .
   - git commit -m "Update docs"
   - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}"  master:gh-pages
@@ -25,4 +25,4 @@ branches:
 
 env:
   global:
-    - GH_REF: github.com/fuzhouxxdong/fuzhouxxdong.github.io.git
+    - GH_REF: github.com/fuzhouxxdong/myblog.git
