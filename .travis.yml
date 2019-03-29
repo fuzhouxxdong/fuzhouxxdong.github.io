@@ -16,8 +16,8 @@ after_script:
   - git config user.email "fuzhouxxdong@gmail.com"
   - git add .
   - git commit -m "Update docs"
-#  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
-  - git push --force --quiet "https://dfz:${CD_TOKEN}@${CD_REF}" master:master
+  - git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:master
+#  - git push --force --quiet "https://dfz:${CD_TOKEN}@${CD_REF}" master:master
 # E: Build LifeCycle
 
 branches:
@@ -25,5 +25,5 @@ branches:
     - master
 env:
   global:
-#    - GH_REF: github.com/fuzhouxxdong/fuzhouxxdong.github.io.git
-    - CD_REF: git.dev.tencent.com/dfz/myblog.git
+    - GH_REF: github.com/fuzhouxxdong/fuzhouxxdong.github.io.git
+#    - CD_REF: git.dev.tencent.com/dfz/myblog.git
