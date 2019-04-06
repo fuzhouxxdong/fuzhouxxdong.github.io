@@ -2,6 +2,7 @@
 title: GitHub pages个性域名实现https访问
 date: 2017-06-12 14:46:06
 tags: 瞎搞
+categories: 瞎搞
 ---
 
 ## Netlify 搭建网站
@@ -26,5 +27,4 @@ tags: 瞎搞
  
 + 然后到 Netlify 添加你的域名或子域名，在Netlify 的官网的 HTTPS 菜单下，勾选上 Let’s Encrypt ， 然后如果成功，则如下图所示。
  ![QQ20170612171233.png](https://tuchuang001.com/images/2017/06/12/QQ20170612171233.png)
- 
  

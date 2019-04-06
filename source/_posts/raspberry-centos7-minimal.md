@@ -2,6 +2,7 @@
 title: 树莓派centos7-mimimal连接WiFi
 date: 2018-04-17 10:12:33
 tags: 瞎搞
+categories: 瞎搞
 ---
 ###### #nmcli d命令查看网络情况
 

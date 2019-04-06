@@ -1,7 +1,8 @@
 ---
 title: 我的Fedora27
 date: 2018-03-26 19:52:20
-tags: 生活，学习
+tags: 瞎搞
+categories: 瞎搞
 ---
 ###### 桌面  
 ![Screenshotfrom2018-03-2600-08-46.png](https://www.tuchuang001.com/images/2018/03/26/Screenshotfrom2018-03-2600-08-46.png)
