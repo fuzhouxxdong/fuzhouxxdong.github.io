@@ -1,0 +1,31 @@
+# menu
+menu:
+  Home: /
+  Archives: /archives
+  Tags: /tags
+  # About: /about
+
+social:
+  github: fuzhouxxdong
+
+author: dxx
+since: 2017
+
+google_analytics: UA-115898584-1
+google_site_verification: XyyTSZPVbf2Vn5CvZqBzpuNK_hUm9zGDPuCaFGZ4Nxg
+
+comments:
+  disqus:
+    enable: true
+    shortname: dxx
+    count: false
+    lazyload: false
+  gitment:
+    enable: false
+    owner: your github ID
+    repo: 存储评论的repo
+    id: your client ID
+    secret: your client seret
+
+
+

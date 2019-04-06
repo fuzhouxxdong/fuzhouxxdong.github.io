@@ -1,0 +1,36 @@
+<footer class="footer-social">
+    <% if (theme.social.github) { %>
+    <a class="social-link" target="_blank" href="https://github.com/<%= theme.social.github %>">
+        <i class="iconfont icon-github"></i>
+    </a>
+    <% } %>
+
+    <% if (theme.social.zhihu) { %>
+    <a class="social-link" target="_blank" href="https://www.zhihu.com/people/<%= theme.social.zhihu %>">
+        <i class="iconfont icon-zhihu"></i>
+    </a>
+    <% } %>
+
+    <% if (theme.social.weibo) { %>
+    <a class="social-link" target="_blank" href="http://weibo.com/<%= theme.social.weibo %>">
+        <i class="iconfont icon-weibo"></i>
+    </a>
+    <% } %>
+
+    <div class="footer-copyright">
+        <p class="time-line">
+            &copy;
+            <% current = date(Date.now(), 'YYYY') %>
+            <% if (theme.since && theme.since < current) { %>
+                <%- theme.since %> -
+            <% } %>
+            <%- current %>
+            &nbsp;<i class="iconfont icon-heart"></i>&nbsp;
+            <a target="_blank" href="https://github.com/iJinxin"><%- config.author %></a>
+        </p>
+        <p class="theme-info">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme -
+            <a target="_blank" href="https://github.com/iJinxin/hexo-theme-sky">Sky</a>
+        </p>
+    </div>
+</footer>

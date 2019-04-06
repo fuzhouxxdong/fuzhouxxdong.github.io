@@ -31,6 +31,7 @@
       </span>
       {% endif %}
 
+
       {% for post in page.posts %}
 
         {# Show year #}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<%- partial('_partial/head') %>
+<body>
+<%- partial('_partial/header') %>
+<%- partial('_partial/mobile-header')%>
+<div class="main">
+    <div class="content-inner">
+        <%- body %>
+    </div>
+</div>
+<%- partial('_partial/social') %>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<%- js('js/index.js') %>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<%- partial('_partial/google-analytics') %>
+</html>
