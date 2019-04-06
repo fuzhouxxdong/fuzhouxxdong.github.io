@@ -23,7 +23,13 @@ comments:
   gitment:
     enable: false
     owner: your github ID
-    repo: 存储评论的repo
+    repo: repo
+    id: your client ID
+    secret: your client seret
+  gitalk:
+    enable: false
+    owner: your github ID
+    repo: repo
     id: your client ID
     secret: your client seret
 

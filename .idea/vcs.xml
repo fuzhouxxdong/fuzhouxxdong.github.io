@@ -4,6 +4,5 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/.deploy_git" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/themes/next/source/lib/canvas-nest" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/themes/sky" vcs="Git" />
   </component>
 </project>
