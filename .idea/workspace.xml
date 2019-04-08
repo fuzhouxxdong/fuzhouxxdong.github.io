@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="38d6e008-c604-4285-ab4f-4aa3dd9657b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/MyFedora27.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/MyFedora27.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/dishuihu.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/dishuihu.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/hello.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/hello.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/netlify-https.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/netlify-https.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/raspberry-centos7-minimal.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/raspberry-centos7-minimal.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/hello.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -28,6 +23,15 @@
                 <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/CNAME">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="20" selection-start-column="20" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -76,17 +80,17 @@
         <option value="$PROJECT_DIR$/themes/sky/layout/post.ejs" />
         <option value="$PROJECT_DIR$/themes/sky/layout/_partial/gitalk.ejs" />
         <option value="$PROJECT_DIR$/themes/sky/_config.yml" />
-        <option value="$PROJECT_DIR$/source/CNAME" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/source/_posts/MyFedora27.md" />
         <option value="$PROJECT_DIR$/source/_posts/netlify-https.md" />
         <option value="$PROJECT_DIR$/source/_posts/raspberry-centos7-minimal.md" />
         <option value="$PROJECT_DIR$/source/_posts/dishuihu.md" />
         <option value="$PROJECT_DIR$/source/_posts/hello.md" />
+        <option value="$PROJECT_DIR$/source/CNAME" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-267" />
     <option name="y" value="117" />
     <option name="width" value="1944" />
@@ -98,6 +102,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -173,7 +178,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -222,11 +226,13 @@
       <workItem from="1554487430677" duration="12748000" />
       <workItem from="1554529313672" duration="6259000" />
       <workItem from="1554566302940" duration="591000" />
+      <workItem from="1554689260062" duration="518000" />
+      <workItem from="1554703195292" duration="4000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37378000" />
+    <option name="totallyTimeSpent" value="37900000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
@@ -503,13 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/CNAME">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
@@ -574,6 +573,13 @@
             <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/CNAME">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
         </state>
       </provider>
     </entry>
