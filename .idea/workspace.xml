@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38d6e008-c604-4285-ab4f-4aa3dd9657b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/sky/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/sky/_config.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,19 +21,19 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="189">
-                <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="13" />
+                <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/handwritten-and-hand-drawn.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="147">
-                <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="294">
+                <caret line="14" selection-start-line="14" selection-end-line="14" />
               </first_editor>
               <second_editor />
             </state>
@@ -54,8 +52,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
+            <state relative-caret-position="397">
+              <caret line="77" column="19" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/sky/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -103,15 +110,15 @@
         <option value="$PROJECT_DIR$/themes/sky/layout/_partial/head.ejs" />
         <option value="$PROJECT_DIR$/themes/sky/layout/post.ejs" />
         <option value="$PROJECT_DIR$/themes/sky/layout/_partial/gitalk.ejs" />
-        <option value="$PROJECT_DIR$/themes/sky/_config.yml" />
         <option value="$PROJECT_DIR$/source/_posts/MyFedora27.md" />
         <option value="$PROJECT_DIR$/source/_posts/netlify-https.md" />
         <option value="$PROJECT_DIR$/source/_posts/raspberry-centos7-minimal.md" />
         <option value="$PROJECT_DIR$/source/_posts/dishuihu.md" />
         <option value="$PROJECT_DIR$/source/_posts/hello.md" />
         <option value="$PROJECT_DIR$/source/CNAME" />
-        <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/source/_posts/handwritten-and-hand-drawn.md" />
+        <option value="$PROJECT_DIR$/_config.yml" />
+        <option value="$PROJECT_DIR$/themes/sky/_config.yml" />
       </list>
     </option>
   </component>
@@ -174,14 +181,6 @@
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="sky" type="462c0819:PsiDirectoryNode" />
               <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myblog" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="sky" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-              <item name="_partial" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
@@ -253,12 +252,12 @@
       <workItem from="1554566302940" duration="591000" />
       <workItem from="1554689260062" duration="518000" />
       <workItem from="1554703195292" duration="640000" />
-      <workItem from="1554867606581" duration="1552000" />
+      <workItem from="1554867606581" duration="2247000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40088000" />
+    <option name="totallyTimeSpent" value="40783000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
@@ -518,13 +517,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/sky/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="26" column="1" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/sky/layout/layout.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -589,18 +581,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="60" column="20" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/hello.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="189">
-            <caret line="9" selection-start-line="9" selection-end-line="9" selection-end-column="13" />
+            <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           </first_editor>
           <second_editor />
         </state>
@@ -608,11 +593,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/handwritten-and-hand-drawn.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="147">
-            <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="294">
+            <caret line="14" selection-start-line="14" selection-end-line="14" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="77" column="19" selection-start-line="77" selection-start-column="14" selection-end-line="77" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/sky/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
         </state>
       </provider>
     </entry>
