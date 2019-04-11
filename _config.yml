@@ -86,7 +86,8 @@ markdown:
     - markdown-it-ins
     - markdown-it-sub
     - markdown-it-sup
-    - markdown-it-emoji  ## add emoji
+    - markdown-it-emoji
+    - markdown-it-image
   anchors:
     level: 2
     collisionSuffix: 'v'
