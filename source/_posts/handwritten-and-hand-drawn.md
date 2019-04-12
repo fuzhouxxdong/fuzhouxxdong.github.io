@@ -9,8 +9,8 @@ categories: 瞎搞
 
 <!-- more -->
 
-![WB9pulD5](https://raw.githubusercontent.com/diycat/img/master/WB9pulD5.jpg)
+@[WB9pulD5](https://raw.githubusercontent.com/diycat/img/master/WB9pulD5.jpg)
 
-![f4VUEPkY](https://raw.githubusercontent.com/diycat/img/master/f4VUEPkY.jpg)
+@[f4VUEPkY](https://raw.githubusercontent.com/diycat/img/master/f4VUEPkY.jpg)
 
 @[testt](https://raw.githubusercontent.com/diycat/img/master/1111111.jpg)
