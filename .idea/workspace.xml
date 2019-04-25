@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="38d6e008-c604-4285-ab4f-4aa3dd9657b3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/dishuihu.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/dishuihu.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +17,11 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/source/_posts/custom-img-store-for-blog.md">
+        <entry file="file://$PROJECT_DIR$/source/_posts/dishuihu.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="189">
-                <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="410">
+                <caret line="20" selection-start-line="20" selection-end-line="20" />
               </first_editor>
               <second_editor />
             </state>
@@ -72,7 +73,6 @@
         <option value="$PROJECT_DIR$/source/_posts/MyFedora27.md" />
         <option value="$PROJECT_DIR$/source/_posts/netlify-https.md" />
         <option value="$PROJECT_DIR$/source/_posts/raspberry-centos7-minimal.md" />
-        <option value="$PROJECT_DIR$/source/_posts/dishuihu.md" />
         <option value="$PROJECT_DIR$/source/_posts/hello.md" />
         <option value="$PROJECT_DIR$/source/CNAME" />
         <option value="$PROJECT_DIR$/themes/sky/_config.yml" />
@@ -83,6 +83,7 @@
         <option value="$PROJECT_DIR$/source/_posts/handwritten-and-hand-drawn.md" />
         <option value="$PROJECT_DIR$/source/_posts/yi-dian-dian.md" />
         <option value="$PROJECT_DIR$/source/_posts/custom-img-store-for-blog.md" />
+        <option value="$PROJECT_DIR$/source/_posts/dishuihu.md" />
       </list>
     </option>
   </component>
@@ -98,6 +99,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,7 +133,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,15 +201,18 @@
       <workItem from="1555381525346" duration="11000" />
       <workItem from="1555388889001" duration="42000" />
       <workItem from="1555389190300" duration="1215000" />
-      <workItem from="1555553997642" duration="3400000" />
+      <workItem from="1555553997642" duration="3537000" />
+      <workItem from="1555642512666" duration="1198000" />
+      <workItem from="1555822946233" duration="15000" />
+      <workItem from="1556158521457" duration="1124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58941000" />
+    <option name="totallyTimeSpent" value="61415000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="704" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -464,16 +468,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/dishuihu.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-284">
-            <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/sky/layout/layout.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -591,8 +585,18 @@
     <entry file="file://$PROJECT_DIR$/source/_posts/custom-img-store-for-blog.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="189">
-            <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+          <first_editor relative-caret-position="168">
+            <caret line="8" selection-start-line="8" selection-end-line="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/dishuihu.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="410">
+            <caret line="20" selection-start-line="20" selection-end-line="20" />
           </first_editor>
           <second_editor />
         </state>
