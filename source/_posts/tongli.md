@@ -1,8 +1,8 @@
 ---
 title: 同里
 date: 2019-04-28 14:42:54
-tags: 游玩
-categories: 游玩
+tags: 生活
+categories: 生活
 ---
 
 @[1](https://raw.githubusercontent.com/diycat/img/master/aCJOEiKz.jpg)
