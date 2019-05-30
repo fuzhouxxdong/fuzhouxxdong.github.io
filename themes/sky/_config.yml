@@ -18,7 +18,7 @@ baidu_analytics: 1eb6f650adf6b4da2b2fee8afa8a1460
 
 comments:
   disqus:
-    enable: true
+    enable: false
     shortname: dxx
     count: false
     lazyload: false

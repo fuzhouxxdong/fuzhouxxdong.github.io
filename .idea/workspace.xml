@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38d6e008-c604-4285-ab4f-4aa3dd9657b3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/source/_posts/spring-boot-elasticsearch-demo.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/spring-boot-elasticsearch-demo.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/sky/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/sky/_config.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/spring-boot-elasticsearch-demo.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -23,6 +23,15 @@
                 <caret line="223" column="63" selection-start-line="223" selection-start-column="63" selection-end-line="223" selection-end-column="63" />
               </first_editor>
               <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/themes/sky/_config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-27">
+              <caret line="20" column="17" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -97,7 +106,6 @@
         <option value="$PROJECT_DIR$/source/_posts/raspberry-centos7-minimal.md" />
         <option value="$PROJECT_DIR$/source/_posts/hello.md" />
         <option value="$PROJECT_DIR$/source/CNAME" />
-        <option value="$PROJECT_DIR$/themes/sky/_config.yml" />
         <option value="$PROJECT_DIR$/themes/sky/layout/_partial/baidu-analytics.ejs" />
         <option value="$PROJECT_DIR$/themes/sky/layout/layout.ejs" />
         <option value="$PROJECT_DIR$/package.json" />
@@ -111,6 +119,7 @@
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/source/_posts/tongli.md" />
         <option value="$PROJECT_DIR$/source/_posts/spring-boot-elasticsearch-demo.md" />
+        <option value="$PROJECT_DIR$/themes/sky/_config.yml" />
       </list>
     </option>
   </component>
@@ -148,6 +157,12 @@
               <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
               <item name="myblog" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myblog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myblog" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="sky" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -228,23 +243,22 @@
       <workItem from="1556158521457" duration="4415000" />
       <workItem from="1556428798427" duration="4601000" />
       <workItem from="1559224748347" duration="374000" />
-      <workItem from="1559225138535" duration="4008000" />
+      <workItem from="1559225138535" duration="4507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73689000" />
+    <option name="totallyTimeSpent" value="74188000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" weight="0.1899841" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.7941712" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.7941712" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32786885" />
       <window_info anchor="bottom" id="Get Gist" order="4" weight="0.32846716" />
       <window_info anchor="bottom" id="Message" order="5" />
@@ -260,7 +274,7 @@
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1899841" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1899841" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
@@ -511,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/sky/_config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/custom-img-store-for-blog.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -640,6 +647,13 @@
             <caret line="223" column="63" selection-start-line="223" selection-start-column="63" selection-end-line="223" selection-end-column="63" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/sky/_config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="17" />
         </state>
       </provider>
     </entry>
