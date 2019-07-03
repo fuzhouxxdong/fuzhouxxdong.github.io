@@ -62,11 +62,11 @@ docker-compose -f elastic.yml up -d
 
 打开chrome 访问http://your-ip:5000可以看到如下
 
-@[1](https://raw.githubusercontent.com/diycat/img/master/37yWEqzP.jpg)
+![1](https://files.catbox.moe/8llvdg.png)
 
 然后点击connect按钮
 
-@[2](https://raw.githubusercontent.com/diycat/img/master/aCp04imN.jpg)
+![2](https://files.catbox.moe/qyrxgm.png)
 
 可以看到cluster-name为es， 安装完成，下面代码
 新建spring-boot 工程
@@ -208,17 +208,17 @@ spring:
 启动工程
 访问 http://localhost:80080/add
 
-@[3](https://raw.githubusercontent.com/diycat/img/master/BvM8oUul.jpg)
+![3](https://files.catbox.moe/0vpuun.png)
 
 可以看上图我们添加成功了test
 
 打开test链接,可以从Mappings中看到我们添加的luckfairy类
 
-@[4](https://raw.githubusercontent.com/diycat/img/master/ofvB5EL4.jpg)
+![4](https://files.catbox.moe/zbuoy1.png)
 
 访问http://localhost:80080/query查询刚才添加的对象
 
-@[5](https://raw.githubusercontent.com/diycat/img/master/TFbDXxUZ.jpg)
+![5](https://files.catbox.moe/p2mohj.png)
 
 demo地址
 [https://github.com/fuzhouxxdong/spring-boot-elasticsearch-demo](https://github.com/fuzhouxxdong/spring-boot-elasticsearch-demo)

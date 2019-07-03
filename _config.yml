@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Dxx
+title: dxx
 subtitle:
 description:
 keywords:
@@ -100,7 +100,7 @@ markdown:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: sky
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
