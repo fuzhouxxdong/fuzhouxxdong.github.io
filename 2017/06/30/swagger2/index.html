@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    
+        <meta name="google-site-verification" content="zdWPwymBWStc03mphQc3WEgKOEJce2_trUxr1cqFq6g">
+    
+    <title>dxx</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="//at.alicdn.com/t/font_859455_eaq7v6w8ktj.css">
+</head>
+
+<body>
+<header class="header">
+    <div class="header-inner">
+        <div class="header-title">
+
+        </div>
+        <nav class="header-nav">
+            
+            <a href="/" class="header-nav-link" >
+                Home
+            </a>
+            
+
+            
+            <a href="/archives" class="header-nav-link">
+                Archives
+            </a>
+            
+
+            
+            <a href="/tags" class="header-nav-link">
+                Tags
+            </a>
+            
+
+            
+        </nav>
+    </div>
+</header>
+<header class="mobile-header">
+    <div class="mobile-nav">
+        <div class="mobile-nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="mobile-nav-title">
+            <a href="/" class="mobile-nav-title-link">dxx's Blog</a>
+        </div>
+
+    </div>
+    <nav class="mobile-menu">
+        <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-home"></i>
+                <a href="/" class="mobile-nav-link">Home</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-archive"></i>
+                <a href="/archives" class="mobile-nav-link">Archives</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-tag"></i>
+                <a href="/tags" class="mobile-nav-link">Tags</a>
+            </li>
+            <li class="mobile-menu-item">
+                <i class="iconfont icon-about"></i>
+                <a href="/about/" class="mobile-nav-link">About</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="main">
+    <div class="content-inner">
+        <div class="posts">
+    <article class="post-whole">
+        <div class="post-title">
+            <h2 class="title">Swagger2使用</h2>
+            <div class="post-meta">
+                <span class="post-time">2017-06-30</span>
+                
+                <span class="post-category">
+                    
+                    <a class="category" href="/categories/学习/">学习</a>
+                    
+                </span>
+                
+                <span class="post-visit"> visited：<span id="busuanzi_value_page_pv"></span></span>
+            </div>
+        </div>
+        <div class="post-toc" id="post-toc">
+    <strong class="post-toc-title">目录</strong>
+    <ol class="toc"><li class="toc-item toc-level-6"><a class="toc-link" href="#练习代码地址"><span class="toc-text">练习代码地址</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#swagger2"><span class="toc-text">Swagger2</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#添加swagger2依赖"><span class="toc-text">添加Swagger2依赖</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#配置swagger2"><span class="toc-text">配置Swagger2</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#添加controller-api接口"><span class="toc-text">添加Controller API接口</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#运行结果"><span class="toc-text">运行结果</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#最后"><span class="toc-text">最后</span></a></li></ol>
+    <div class="back-to-top" id="back-to-top">
+        <a href="javascript:void(0);">回到顶部</a>
+    </div>
+</div>
+        <div class="post-content">
+            <h6 id="练习代码地址">练习代码地址</h6>
+<p><a href="https://github.com/flowerflash/spring-boot-swagger2" target="_blank" rel="noopener">spring-boot-swagger2</a></p>
+<h6 id="swagger2">Swagger2</h6>
+<p>它既可以减少我们创建文档的工作量，同时说明内容又整合入实现代码中，让维护文档和修改代码整合为一体，<br>
+可以让我们在修改代码逻辑的同时方便的修改文档说明。</p>
+<h6 id="添加swagger2依赖">添加Swagger2依赖</h6>
+<p>用maven 构建，在pom.xml添加依赖，如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;io.springfox&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;springfox-swagger2&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;2.7.0&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;io.springfox&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;springfox-swagger-ui&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;2.7.0&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+<h6 id="配置swagger2">配置Swagger2</h6>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">package com.example.demo;</span><br><span class="line"></span><br><span class="line">import com.google.common.base.Predicate;</span><br><span class="line">import com.google.common.base.Predicates;</span><br><span class="line">import org.springframework.context.annotation.Bean;</span><br><span class="line">import org.springframework.context.annotation.ComponentScan;</span><br><span class="line">import org.springframework.context.annotation.Configuration;</span><br><span class="line">import springfox.documentation.builders.ApiInfoBuilder;</span><br><span class="line">import springfox.documentation.builders.PathSelectors;</span><br><span class="line">import springfox.documentation.service.ApiInfo;</span><br><span class="line">import springfox.documentation.service.Contact;</span><br><span class="line">import springfox.documentation.spi.DocumentationType;</span><br><span class="line">import springfox.documentation.spring.web.plugins.Docket;</span><br><span class="line">import springfox.documentation.swagger2.annotations.EnableSwagger2;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line">* Created by Dxx on 2017/6/30.</span><br><span class="line">*/</span><br><span class="line"></span><br><span class="line">@Configuration</span><br><span class="line">@EnableSwagger2</span><br><span class="line">@ComponentScan(&quot;com.example.demo.controllers&quot;)</span><br><span class="line">public class Swagger2 &#123;</span><br><span class="line"></span><br><span class="line">  @Bean</span><br><span class="line">  public Docket Api() &#123;</span><br><span class="line">      return new Docket(DocumentationType.SWAGGER_2)</span><br><span class="line">          .groupName(&quot;Swagger2 Test API&quot;)</span><br><span class="line">          .forCodeGeneration(true)</span><br><span class="line">          .pathMapping(&quot;/&quot;)</span><br><span class="line">          .select()</span><br><span class="line">          .paths(paths())</span><br><span class="line">          .build()</span><br><span class="line">          .apiInfo(apiInfo())</span><br><span class="line">          .useDefaultResponseMessages(true);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  private Predicate&lt;String&gt; paths() &#123;</span><br><span class="line">      return Predicates</span><br><span class="line">          .and(PathSelectors.regex(&quot;/.*&quot;), Predicates.not(PathSelectors.regex(&quot;/error&quot;)));</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  private ApiInfo apiInfo() &#123;</span><br><span class="line">      Contact contact = new Contact(&quot;Dxx&quot;, &quot;https://dxx.flowerflash.me/&quot;, &quot;dfz@flowerflash.me&quot;);</span><br><span class="line">      return new ApiInfoBuilder()</span><br><span class="line">          .title(&quot;Document Api&quot;)</span><br><span class="line">          .description(&quot;Swagger2 Example&quot;)</span><br><span class="line">          .license(&quot;https://www.apache.org/licenses/LICENSE-2.0&quot;)</span><br><span class="line">          .contact(contact)</span><br><span class="line">          .version(&quot;1.0&quot;)</span><br><span class="line">          .build();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="添加controller-api接口">添加Controller API接口</h6>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">package com.example.demo.controllers;</span><br><span class="line"></span><br><span class="line">import com.example.demo.domains.Order;</span><br><span class="line">import io.swagger.annotations.ApiImplicitParam;</span><br><span class="line">import io.swagger.annotations.ApiOperation;</span><br><span class="line">import java.util.ArrayList;</span><br><span class="line">import java.util.List;</span><br><span class="line">import org.springframework.web.bind.annotation.GetMapping;</span><br><span class="line">import org.springframework.web.bind.annotation.PathVariable;</span><br><span class="line">import org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line">import org.springframework.web.bind.annotation.RestController;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * Created by Dxx on 2017/6/30.</span><br><span class="line"> */</span><br><span class="line">@RestController</span><br><span class="line">@RequestMapping(&quot;/api&quot;)</span><br><span class="line">public class OrderController &#123;</span><br><span class="line"></span><br><span class="line">    @ApiOperation(value = &quot;取得所有订单信息&quot;, notes = &quot;124141412&quot; , produces = &quot;application/json&quot;)</span><br><span class="line">    @GetMapping(&quot;/orders&quot;)</span><br><span class="line">    public List&lt;Order&gt; getUsers() &#123;</span><br><span class="line">        List&lt;Order&gt; orderList = new ArrayList&lt;Order&gt;();</span><br><span class="line">        for (int i = 0; i &lt; 5; i++) &#123;</span><br><span class="line">            Order Order = new Order(i, &quot;OrderNo&quot; + i);</span><br><span class="line">            orderList.add(Order);</span><br><span class="line">        &#125;</span><br><span class="line">        return orderList;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @ApiOperation(value = &quot;通过订单ID取得单个订单信息&quot;, notes = &quot;124141412&quot;, produces = &quot;application/json&quot;)</span><br><span class="line">    @ApiImplicitParam(required = true, name = &quot;id&quot;, value = &quot;用户ID&quot;, dataType = &quot;int&quot;, paramType = &quot;path&quot;)</span><br><span class="line">    @GetMapping(value = &quot;/order/&#123;id&#125;&quot;)</span><br><span class="line">    public Order getUser(@PathVariable(&quot;id&quot;) Integer id) &#123;</span><br><span class="line">        List&lt;Order&gt; orderList = new ArrayList&lt;Order&gt;();</span><br><span class="line">        for (int i = 0; i &lt; 5; i++) &#123;</span><br><span class="line">            Order Order = new Order(i, &quot;OrderNo&quot; + i);</span><br><span class="line">            orderList.add(Order);</span><br><span class="line">        &#125;</span><br><span class="line">        Order order = new Order();</span><br><span class="line">        for (Order o: orderList) &#123;</span><br><span class="line">            if (o.getId() == id)&#123;</span><br><span class="line">                order = o;</span><br><span class="line">                break;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return order;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="运行结果">运行结果</h6>
+<p>访问如下地址后：<a href>http://localhost:8080/swagger-ui.html</a></p>
+<p><img src="https://tuchuang001.com/images/2017/06/30/QQ20170630145529.png" alt="QQ20170630145529.png"></p>
+<h6 id="最后">最后</h6>
+<p>总体来说还是挺方便的，还需要努力学习一下。。。。</p>
+
+        </div>
+        
+        <div class="post-tag">
+            
+            <a class="tag" href="/tags/学习/" title="学习">学习</a>
+            
+        </div>
+        
+    </article>
+</div>
+<div class="paginator">
+    
+        
+            <a class="prev" href="/2018/03/26/MyFedora27/">
+                <i class="iconfont icon-prev"></i>
+                <span class="nav-default">我的Fedora27</span>
+                <span class="nav-mobile">Prev</span>
+            </a>
+        
+        
+            <a class="next" href="/2017/06/12/netlify-https/">
+                <span class="nav-default">GitHub pages个性域名实现https访问</span>
+                <span class="nav-mobile">Next</span>
+                <i class="iconfont icon-next"></i>
+            </a>
+        
+    
+</div>
+<div id="comment-container">
+    
+
+
+    
+
+    
+
+</div>
+
+    </div>
+</div>
+<footer class="footer-social">
+    
+    <a class="social-link" target="_blank" href="https://github.com/fuzhouxxdong">
+        <i class="iconfont icon-github"></i>
+    </a>
+    
+
+    
+
+    
+
+    <div class="footer-copyright">
+        <p class="time-line">
+            &copy;
+            
+            
+                2017 -
+            
+            2019
+            &nbsp;<i class="iconfont icon-heart"></i>&nbsp;
+            <a target="_blank" href="https://github.com/iJinxin">dxx</a>
+        </p>
+        <p class="theme-info">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>  |  Theme -
+            <a target="_blank" href="https://github.com/iJinxin/hexo-theme-sky">Sky</a>
+        </p>
+    </div>
+</footer>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-115898584-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+
+
+    <!-- Baidu Analytics -->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?1eb6f650adf6b4da2b2fee8afa8a1460";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <!-- End Baidu Analytics -->
+
+
+</html>
