@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="练习代码地址  spring-boot-swagger2 Swagger2 它既可以减少我们创建文档的工作量，同时说明内容又整合入实现代码中，让维护文档和修改代码整合为一体， 可以让我们在修改代码逻辑的同时方便的修改文档说明。  添加Swagger2依赖用maven 构建，在pom.xml添加依赖，如下 12345678910&lt;dependency&gt;    &lt;groupId&amp;gt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Swagger2使用">
+<meta property="og:url" content="http://example.com/2017/06/30/swagger2/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="练习代码地址  spring-boot-swagger2 Swagger2 它既可以减少我们创建文档的工作量，同时说明内容又整合入实现代码中，让维护文档和修改代码整合为一体， 可以让我们在修改代码逻辑的同时方便的修改文档说明。  添加Swagger2依赖用maven 构建，在pom.xml添加依赖，如下 12345678910&lt;dependency&gt;    &lt;groupId&amp;gt">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://tuchuang001.com/images/2017/06/30/QQ20170630145529.png">
+<meta property="article:published_time" content="2017-06-30T06:25:35.000Z">
+<meta property="article:modified_time" content="2021-01-15T09:28:42.388Z">
+<meta property="article:author" content="John Doe">
+<meta property="article:tag" content="学习">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tuchuang001.com/images/2017/06/30/QQ20170630145529.png">
+
+<link rel="canonical" href="http://example.com/2017/06/30/swagger2/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Swagger2使用 | Hexo</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Hexo</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">15</span></a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2017/06/30/swagger2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="John Doe">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hexo">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Swagger2使用
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2017-06-30 14:25:35" itemprop="dateCreated datePublished" datetime="2017-06-30T14:25:35+08:00">2017-06-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2021-01-15 17:28:42" itemprop="dateModified" datetime="2021-01-15T17:28:42+08:00">2021-01-15</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h6 id="练习代码地址"><a href="#练习代码地址" class="headerlink" title="练习代码地址"></a>练习代码地址</h6><p>  <a target="_blank" rel="noopener" href="https://github.com/flowerflash/spring-boot-swagger2">spring-boot-swagger2</a></p>
+<h6 id="Swagger2"><a href="#Swagger2" class="headerlink" title="Swagger2"></a>Swagger2</h6><p> 它既可以减少我们创建文档的工作量，同时说明内容又整合入实现代码中，让维护文档和修改代码整合为一体，<br> 可以让我们在修改代码逻辑的同时方便的修改文档说明。 </p>
+<h6 id="添加Swagger2依赖"><a href="#添加Swagger2依赖" class="headerlink" title="添加Swagger2依赖"></a>添加Swagger2依赖</h6><p>用maven 构建，在pom.xml添加依赖，如下</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;io.springfox&lt;&#x2F;groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;springfox-swagger2&lt;&#x2F;artifactId&gt;</span><br><span class="line">    &lt;version&gt;2.7.0&lt;&#x2F;version&gt;</span><br><span class="line">&lt;&#x2F;dependency&gt;</span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;io.springfox&lt;&#x2F;groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;springfox-swagger-ui&lt;&#x2F;artifactId&gt;</span><br><span class="line">    &lt;version&gt;2.7.0&lt;&#x2F;version&gt;</span><br><span class="line">&lt;&#x2F;dependency&gt;</span><br></pre></td></tr></table></figure>
+
+<h6 id="配置Swagger2"><a href="#配置Swagger2" class="headerlink" title="配置Swagger2"></a>配置Swagger2</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line">package com.example.demo;</span><br><span class="line"></span><br><span class="line">import com.google.common.base.Predicate;</span><br><span class="line">import com.google.common.base.Predicates;</span><br><span class="line">import org.springframework.context.annotation.Bean;</span><br><span class="line">import org.springframework.context.annotation.ComponentScan;</span><br><span class="line">import org.springframework.context.annotation.Configuration;</span><br><span class="line">import springfox.documentation.builders.ApiInfoBuilder;</span><br><span class="line">import springfox.documentation.builders.PathSelectors;</span><br><span class="line">import springfox.documentation.service.ApiInfo;</span><br><span class="line">import springfox.documentation.service.Contact;</span><br><span class="line">import springfox.documentation.spi.DocumentationType;</span><br><span class="line">import springfox.documentation.spring.web.plugins.Docket;</span><br><span class="line">import springfox.documentation.swagger2.annotations.EnableSwagger2;</span><br><span class="line"></span><br><span class="line">&#x2F;**</span><br><span class="line">* Created by Dxx on 2017&#x2F;6&#x2F;30.</span><br><span class="line">*&#x2F;</span><br><span class="line"></span><br><span class="line">@Configuration</span><br><span class="line">@EnableSwagger2</span><br><span class="line">@ComponentScan(&quot;com.example.demo.controllers&quot;)</span><br><span class="line">public class Swagger2 &#123;</span><br><span class="line"></span><br><span class="line">  @Bean</span><br><span class="line">  public Docket Api() &#123;</span><br><span class="line">      return new Docket(DocumentationType.SWAGGER_2)</span><br><span class="line">          .groupName(&quot;Swagger2 Test API&quot;)</span><br><span class="line">          .forCodeGeneration(true)</span><br><span class="line">          .pathMapping(&quot;&#x2F;&quot;)</span><br><span class="line">          .select()</span><br><span class="line">          .paths(paths())</span><br><span class="line">          .build()</span><br><span class="line">          .apiInfo(apiInfo())</span><br><span class="line">          .useDefaultResponseMessages(true);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  private Predicate&lt;String&gt; paths() &#123;</span><br><span class="line">      return Predicates</span><br><span class="line">          .and(PathSelectors.regex(&quot;&#x2F;.*&quot;), Predicates.not(PathSelectors.regex(&quot;&#x2F;error&quot;)));</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  private ApiInfo apiInfo() &#123;</span><br><span class="line">      Contact contact &#x3D; new Contact(&quot;Dxx&quot;, &quot;https:&#x2F;&#x2F;dxx.flowerflash.me&#x2F;&quot;, &quot;dfz@flowerflash.me&quot;);</span><br><span class="line">      return new ApiInfoBuilder()</span><br><span class="line">          .title(&quot;Document Api&quot;)</span><br><span class="line">          .description(&quot;Swagger2 Example&quot;)</span><br><span class="line">          .license(&quot;https:&#x2F;&#x2F;www.apache.org&#x2F;licenses&#x2F;LICENSE-2.0&quot;)</span><br><span class="line">          .contact(contact)</span><br><span class="line">          .version(&quot;1.0&quot;)</span><br><span class="line">          .build();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h6 id="添加Controller-API接口"><a href="#添加Controller-API接口" class="headerlink" title="添加Controller API接口"></a>添加Controller API接口</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">package com.example.demo.controllers;</span><br><span class="line"></span><br><span class="line">import com.example.demo.domains.Order;</span><br><span class="line">import io.swagger.annotations.ApiImplicitParam;</span><br><span class="line">import io.swagger.annotations.ApiOperation;</span><br><span class="line">import java.util.ArrayList;</span><br><span class="line">import java.util.List;</span><br><span class="line">import org.springframework.web.bind.annotation.GetMapping;</span><br><span class="line">import org.springframework.web.bind.annotation.PathVariable;</span><br><span class="line">import org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line">import org.springframework.web.bind.annotation.RestController;</span><br><span class="line"></span><br><span class="line">&#x2F;**</span><br><span class="line"> * Created by Dxx on 2017&#x2F;6&#x2F;30.</span><br><span class="line"> *&#x2F;</span><br><span class="line">@RestController</span><br><span class="line">@RequestMapping(&quot;&#x2F;api&quot;)</span><br><span class="line">public class OrderController &#123;</span><br><span class="line"></span><br><span class="line">    @ApiOperation(value &#x3D; &quot;取得所有订单信息&quot;, notes &#x3D; &quot;124141412&quot; , produces &#x3D; &quot;application&#x2F;json&quot;)</span><br><span class="line">    @GetMapping(&quot;&#x2F;orders&quot;)</span><br><span class="line">    public List&lt;Order&gt; getUsers() &#123;</span><br><span class="line">        List&lt;Order&gt; orderList &#x3D; new ArrayList&lt;Order&gt;();</span><br><span class="line">        for (int i &#x3D; 0; i &lt; 5; i++) &#123;</span><br><span class="line">            Order Order &#x3D; new Order(i, &quot;OrderNo&quot; + i);</span><br><span class="line">            orderList.add(Order);</span><br><span class="line">        &#125;</span><br><span class="line">        return orderList;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @ApiOperation(value &#x3D; &quot;通过订单ID取得单个订单信息&quot;, notes &#x3D; &quot;124141412&quot;, produces &#x3D; &quot;application&#x2F;json&quot;)</span><br><span class="line">    @ApiImplicitParam(required &#x3D; true, name &#x3D; &quot;id&quot;, value &#x3D; &quot;用户ID&quot;, dataType &#x3D; &quot;int&quot;, paramType &#x3D; &quot;path&quot;)</span><br><span class="line">    @GetMapping(value &#x3D; &quot;&#x2F;order&#x2F;&#123;id&#125;&quot;)</span><br><span class="line">    public Order getUser(@PathVariable(&quot;id&quot;) Integer id) &#123;</span><br><span class="line">        List&lt;Order&gt; orderList &#x3D; new ArrayList&lt;Order&gt;();</span><br><span class="line">        for (int i &#x3D; 0; i &lt; 5; i++) &#123;</span><br><span class="line">            Order Order &#x3D; new Order(i, &quot;OrderNo&quot; + i);</span><br><span class="line">            orderList.add(Order);</span><br><span class="line">        &#125;</span><br><span class="line">        Order order &#x3D; new Order();</span><br><span class="line">        for (Order o: orderList) &#123;</span><br><span class="line">            if (o.getId() &#x3D;&#x3D; id)&#123;</span><br><span class="line">                order &#x3D; o;</span><br><span class="line">                break;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return order;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h6 id="运行结果"><a href="#运行结果" class="headerlink" title="运行结果"></a>运行结果</h6><p>  访问如下地址后：<a href="">http://localhost:8080/swagger-ui.html</a></p>
+<p>  <img src="https://tuchuang001.com/images/2017/06/30/QQ20170630145529.png" alt="QQ20170630145529.png"></p>
+<h6 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h6><p>  总体来说还是挺方便的，还需要努力学习一下。。。。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"># 学习</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2017/06/12/netlify-https/" rel="prev" title="GitHub pages个性域名实现https访问">
+      <i class="fa fa-chevron-left"></i> GitHub pages个性域名实现https访问
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2018/03/26/MyFedora27/" rel="next" title="我的Fedora27">
+      我的Fedora27 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-6"><a class="nav-link" href="#%E7%BB%83%E4%B9%A0%E4%BB%A3%E7%A0%81%E5%9C%B0%E5%9D%80"><span class="nav-number">1.</span> <span class="nav-text">练习代码地址</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#Swagger2"><span class="nav-number">2.</span> <span class="nav-text">Swagger2</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0Swagger2%E4%BE%9D%E8%B5%96"><span class="nav-number">3.</span> <span class="nav-text">添加Swagger2依赖</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E9%85%8D%E7%BD%AESwagger2"><span class="nav-number">4.</span> <span class="nav-text">配置Swagger2</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0Controller-API%E6%8E%A5%E5%8F%A3"><span class="nav-number">5.</span> <span class="nav-text">添加Controller API接口</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C"><span class="nav-number">6.</span> <span class="nav-text">运行结果</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#%E6%9C%80%E5%90%8E"><span class="nav-number">7.</span> <span class="nav-text">最后</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">John Doe</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">John Doe</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
